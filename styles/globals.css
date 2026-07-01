@@ -1,1 +1,9 @@
-*{box-sizing:border-box;margin:0;padding:0}html,body{font-family:'Manrope',-apple-system,sans-serif;background:#F6F3EC}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:'Manrope',-apple-system,sans-serif;background:#F6F3EC}
+
+/* Mobile responsive adjustments */
+@media(max-width:600px){
+  main{padding:48px 24px 80px !important}
+  footer{padding:20px 24px !important}
+  h1{font-size:34px !important}
+}
