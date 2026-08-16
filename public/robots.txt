@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aloha-third-asset.vercel.app/sitemap.xml
