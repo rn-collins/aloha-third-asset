@@ -10,9 +10,9 @@ const checks=[
  {id:'monitoring',label:'No post-launch monitoring',prompt:'Is there no named owner for complaints, misuse, impersonation, takedowns, or material output changes?',weight:2,owner:'Operations',action:'Name an incident owner; define detection, escalation, takedown, evidence preservation, and response timing.'}
 ]
 const sources=[
- ['FTC Endorsement Guides (2023)','Truthful endorsements, material connections, virtual influencers, and clear disclosures.','https://www.ftc.gov/news-events/news/press-releases/2023/06/federal-trade-commission-announces-updated-advertising-guides-combat-deceptive-reviews-endorsements'],
- ['FTC Reviews & Testimonials Rule','AI-generated fake reviews and testimonials are among the practices addressed by the final rule.','https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials'],
- ['U.S. Copyright Office: Copyright and AI','Primary reports and guidance on digital replicas, copyrightability, and AI training.','https://www.copyright.gov/AI/'],
+ ['16 CFR Part 255 — Endorsement Guides','Truthful endorsements, material connections, virtual influencers, and clear disclosures.','https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255'],
+ ['16 CFR Part 465 — Reviews & Testimonials','The final rule addresses fake or false reviews and testimonials, including specified AI-generated material.','https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465'],
+ ['U.S. Copyright Office: Copyright and AI','Primary reports and guidance on digital replicas, copyrightability, and AI training.','https://www.copyright.gov/ai/'],
  ['NIST AI 600-1: Generative AI Profile','Voluntary cross-sector risk-management actions for generative AI.','https://doi.org/10.6028/NIST.AI.600-1']
 ]
 const projects=[
@@ -50,12 +50,17 @@ Generated locally in the browser. This is issue-spotting, not legal advice.`
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://aloha-third-asset.vercel.app/"/>
+  <meta property="og:title" content="The Third Asset — AI Campaign Governance Workbench"/>
+  <meta property="og:description" content="Map synthetic-media, creator-rights, disclosure, provenance, and incident-response decisions in a browser-local workbench."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://aloha-third-asset.vercel.app/"/>
+  <meta name="twitter:card" content="summary"/>
  </Head>
  <div className="shell">
   <header><a className="brand" href="#top">Aloha AI Consulting</a><nav><a href="#workbench">Workbench</a><a href="#sources">Sources</a><a href="#method">Method</a></nav></header>
   <main id="top">
    <section className="hero">
-    <p className="eyebrow">The Third Asset · Verified 16 August 2026</p>
+    <p className="eyebrow">The Third Asset · Verified 18 August 2026 · Review due 18 September 2026</p>
     <h1>Creative velocity needs a governance operating system.</h1>
     <p className="lede">Move from an argument about AI risk to a decision record your creative, legal, rights, data, and operations teams can actually use.</p>
     <div className="heroActions"><a className="primary" href="#workbench">Map a campaign</a><a className="secondary" href="#method">Read the operating model</a></div>
