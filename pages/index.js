@@ -54,7 +54,13 @@ Generated locally in the browser. This is issue-spotting, not legal advice.`
   <meta property="og:description" content="Map synthetic-media, creator-rights, disclosure, provenance, and incident-response decisions in a browser-local workbench."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://aloha-third-asset.vercel.app/"/>
-  <meta name="twitter:card" content="summary"/>
+  <meta property="og:image" content="https://aloha-third-asset.vercel.app/og.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="The Third Asset — creative velocity needs a governance operating system. Six gating questions producing a Standard review, Controlled review, or Pause and resolve decision."/>
+  <meta property="og:site_name" content="Aloha AI Consulting"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://aloha-third-asset.vercel.app/og.png"/>
  </Head>
  <div className="shell">
   <header><a className="brand" href="#top">Aloha AI Consulting</a><nav><a href="#workbench">Workbench</a><a href="#sources">Sources</a><a href="#method">Method</a></nav></header>
