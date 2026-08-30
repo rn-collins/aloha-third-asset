@@ -6,7 +6,7 @@ A browser-local workbench for mapping synthetic-media, creator-rights, disclosur
 
 ## Repository contents
 
-`next.config.js`, `package.json`, `pages`, `patch-inquiry.js`, `public`, `styles`, `vercel.json`
+`next.config.js`, `package.json`, `pages`, `public`, `styles`, `vercel.json`
 
 ## Local development
 
