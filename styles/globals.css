@@ -1,7 +1,53 @@
+/* ── SELF-HOSTED FACES ──
+   This build serves `style-src 'self' 'unsafe-inline'; font-src 'self' data:`.
+   A fonts.googleapis.com <link> is blocked in production and the page falls
+   back to the browser default with nothing reporting it, so the faces live on
+   this origin instead. The policy was not changed; the fonts moved. Next.js
+   serves public/ from the site root and vercel.json declares only headers, so
+   there is no route allowlist for these files to fall outside of.
+
+   Be Vietnam Pro and Sometype Mono are used nowhere else in this estate. The
+   licences are in public/fonts/LICENSE.txt. ── */
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/bevietnampro-normal-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/bevietnampro-normal-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/bevietnampro-normal-500-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/bevietnampro-normal-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/bevietnampro-normal-600-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/bevietnampro-normal-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/bevietnampro-normal-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/bevietnampro-normal-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Sometype Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/sometypemono-normal-400_700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Sometype Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/sometypemono-normal-400_700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+/* ── TOKENS ──
+   Amber, green and red are this build's OUTPUT. The workbench emits one of
+   Standard review / Controlled review / Pause & resolve, and .score.green,
+   .score.amber and .score.red carry it. Amber was simultaneously the primary
+   call to action, the export buttons, the whole closing section ground and the
+   focus ring — the same #f0b859, so amber could not mean amber. The semantic
+   three are untouched below and everything decorative has moved off them. ── */
+:root{
+  --ink:#17211f;
+  --paper:#eeece5;          /* was #f4f1e9, the cream a third of this estate shares */
+  --paper-2:#e4e2da;
+  --line:#c9c5ba;
+  --forest:#102d28;
+  --forest-2:#152e29;
+  --glow:#476055;           /* the hero's radial stop: cream on it was 1.14:1 */
+  --mint:#a5e3cd;
+  --accent:#136B4E;         /* eyebrows and record numbers on paper: was 2.31:1 */
+  --action:#17211f;         /* the CTA is ink now, so amber is only ever a band */
+  --on-action:#f6f3ea;
+  --focus:#2b6cb0;          /* was #f0b859 — the same hex as the amber band */
+  --font:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'Sometype Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:3px;
+}
+
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{font-family:Arial,Helvetica,sans-serif;background:#F6F3EC;color:#17211f}
+html,body{font-family:var(--font);background:var(--paper);color:var(--ink)}
 button,a{font:inherit}
-:focus-visible{outline:3px solid #f0b859;outline-offset:3px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:var(--r)}
 
 @media(max-width:600px){
   main{padding-bottom:80px}
@@ -17,4 +63,32 @@ button,a{font:inherit}
   .workbench,.method,.sources{padding:24px !important}
   .grid{display:block !important}.result{position:static !important;margin-top:20px !important}
   a{text-decoration:none;color:#000}
+}
+
+/* ── SKIP LINK, SR-ONLY, FORCED COLOURS ──
+   The build had focus rings, a reduced-motion rule and a print stylesheet, and
+   none of the other three. Forced colours matters here more than most: the
+   disposition is carried by colour on the result panel, so high contrast must
+   still leave the band readable — the band name beside the score is text, and
+   survives. ── */
+.skipLink{position:absolute;left:12px;top:-80px;z-index:60;background:var(--ink);color:var(--on-action);
+  font-family:var(--mono);font-size:13px;font-weight:600;padding:11px 16px;border-radius:0 0 var(--r) var(--r);
+  text-decoration:none}
+.skipLink:focus{top:0}
+.srOnly{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;border:0!important}
+
+@media(forced-colors:active){
+  .hero,.result,.suite,footer,header{background:Canvas!important;color:CanvasText!important;forced-color-adjust:none}
+  .question,.sourceGrid a,.pillars article,.boundary,.stage,.clear,.meter{
+    border:1px solid CanvasText;background:Canvas;color:CanvasText}
+  .primary,.export button,.stage button[aria-pressed=true],.choices .selected{
+    background:Highlight;color:HighlightText;border-color:Highlight;forced-color-adjust:none}
+  .secondary,.choices button,.stage button,.reset{border:1px solid ButtonText;color:ButtonText;background:ButtonFace}
+  .score,.score.green,.score.amber,.score.red{color:CanvasText!important;forced-color-adjust:none}
+  .meter i{background:CanvasText;forced-color-adjust:none}
+  .result li em{border:1px solid CanvasText;background:Canvas;color:CanvasText}
+  a{color:LinkText}
+  :focus-visible{outline:3px solid Highlight}
 }
